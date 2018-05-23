@@ -10,7 +10,7 @@ DB Server Side
 $mysql
 
 show databases;
-create database userdb;                           || drop database userdb;
+create database userdb;                          
 use userdb;
 show tables;
 
@@ -28,8 +28,7 @@ create table test_user(first_name varchar(100),last_name varchar(100),
 > desc test_user;
 > select * from test_user;
 
-Google  || How to manage MySQL databases and users from the command line
-
+Allow Access
 
 grant all privileges on userdb.* to 'admin'@'10.148.0.3' identified by 'admin@1';
 
